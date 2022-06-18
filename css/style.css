@@ -1,0 +1,215 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+body{
+    background-image: url('../bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    
+
+}
+    
+.wrapper{
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    /* border: 200px; */
+    margin: 100px auto 0 auto;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 200px;
+    text-align: left;
+    width:50%;
+    color: white;
+
+}
+.text h1{
+    font-family:Poppins;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    
+}
+.text p{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 50%;
+    padding: 0 10px;
+}
+.forms p{
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 20px 60px;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+    word-spacing: 3px;
+    box-shadow: 0px 10px 0px rgba(153, 62, 62, 0.404);
+}
+.forms p span{
+    font-weight: 800;
+    color: white;
+}
+form{
+    background-color: white;
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 50px 10px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    box-shadow: 0px 10px 0px rgba(153, 62, 62, 0.404);
+}
+form div{
+    padding: 10px 60px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ form div input{
+    border-radius: 5px;
+    padding: 24px 80px;
+    width: 100%;
+    border: 1px solid hsl(246, 25%, 77%);
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    font-weight: 600;
+}
+input:focus{
+    border: 1px solid hsl(248, 32%, 49%);
+    outline: none;
+}
+.end{
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    outline: none;
+    border: none;
+    width: 100%;
+    box-shadow: 0px 2px 2px rgb(59, 57, 57);
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding: 20px 60px;
+    border-radius: 5px;
+    
+}
+ .terms{
+    text-align: center;
+    color:  hsl(246, 25%, 77%);
+    
+}
+a{
+    border-top: 10px;
+    color: hsl(0, 100%, 74%) ;
+    font-weight: 700;
+    text-decoration: none;
+}
+@media screen and (max-width:768px){
+    body{
+        background-image: url('../bg-intro-mobile.png');
+        background-color: hsl(0, 100%, 74%);
+    }
+    .wrapper{
+        flex-direction:column;
+        max-width: 350px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;
+        justify-content: flex-start;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 0;
+    }
+    .text h1{
+        line-height: 1.2em;
+        padding: 10px 40px;
+        font-size: 30px;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+    .text p{
+       /* background-color: blueviolet; */
+       font-size: 18px;
+       line-height: 30px;
+       text-align: center;
+    }
+    .forms p{
+        margin-top: 60px;
+        padding: 50px 60px;
+        border-radius: 10px;
+        color: white;
+        width: 430px;
+        font-size: 17px;
+    }
+    .forms{
+        display: block;
+        width: 100%;
+    }
+    form{
+        width: 430px;
+        padding: 50px 5px;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        box-shadow: 0px 10px 0px rgba(153, 62, 62, 0.404);
+    }
+    form div{
+        padding: 5px 25px;
+        width: 430px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    form div input{
+        padding: 25px 40px;
+        width: 100%;
+        border: 1px solid hsl(246, 25%, 77%);
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .terms{
+        text-align: center;
+        color:  hsl(246, 25%, 77%);
+        
+    }
+    a{
+        border-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: hsl(0, 100%, 74%) ;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+}
